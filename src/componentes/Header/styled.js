@@ -5,8 +5,15 @@ display: flex;
 padding: 20px;
 background-image: url("https://getwallpapers.com/wallpaper/full/b/d/5/557881.jpg")  ;
 justify-content: space-between;
+width: 100%;
 margin: 0 auto;
 
+@media (min-width: 375px) {
+    min-width: 630px;
+   
+ 
+
+   }
 
 .cabecalho {
 text-align:center;

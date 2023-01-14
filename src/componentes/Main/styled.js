@@ -3,20 +3,18 @@ import styled from "styled-components";
 export const Main1= styled.main`
  display: grid;
   justify-items: center;
-  width: 80%;
-  margin: 0 auto;
-  grid-template-columns: repeat(3,1fr); 
+  margin: 0 auto; 
+  width: 700px;
 
-      @media (min-width: 480px) {
-    grid-template-columns: 1fr 1fr;
-    gap: 50px;
-  }
+
 
       
 
  .todos-cards{
   display: grid;
-  margin: 10%;
+  margin: 40px;
+
+
   transform-style: preserve-3d;
     border-radius: 20px;
     filter: drop-shadow(0 0 0.4em #6795BC);
@@ -27,15 +25,13 @@ export const Main1= styled.main`
       -ms-transform: scale(1.1);
       transform: scale(1.1);
       }
+
+ 
  }
 
  .todos-cards> img{
-  grid-column: 1;
-  grid-row: 1/3;
-   width:100%;
-  height:100%; 
-  margin: 0 auto;
-  align-items: center;
+  width: 50vh;
+  height: 50vh;
 
 
  }
@@ -67,6 +63,7 @@ export const Main1= styled.main`
 
 }
 
+/* ir para o carrinho */
 .butonCarrinho{
   background-color: white;
     border-radius: 8px;
@@ -79,15 +76,9 @@ export const Main1= styled.main`
     }
 
  margin-bottom: 10%;
- margin-left: 200%;
-
- @media (min-width: 480px) {
-  margin-left: 100%;
- 
-  }
+ margin-left: 10%;
 
 
-  
 }
 
 .botao{

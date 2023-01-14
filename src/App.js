@@ -35,6 +35,16 @@ export default function App() {
 
   const mudarTela = (valor) => {
     setValorCondicional(valor)
+    // localStorage.clear()
+    // setCarrinho([])
+  }
+
+  const voltarHome =(valor)=>{
+    setValorCondicional (valor)
+     localStorage.clear()
+    setCarrinho([])
+
+  
   }
 
   // adicionar produto ao carrinho
@@ -90,11 +100,16 @@ const renderizaTela = () => {
       return (
         <>
       <Header mudarTela={mudarTela} />
-      <Carrinho carrinho={carrinho} mudarTela={mudarTela} setCarrinho={setCarrinho} removerOnibus={removerOnibus}/>
+      <Carrinho carrinho={carrinho} 
+      mudarTela={mudarTela} 
+      setCarrinho={setCarrinho} removerOnibus={removerOnibus}/>
       </>
         )
     case tela.telaFinal:
-      return <TelaFinal mudarTela={mudarTela}/>
+      return <TelaFinal 
+      // mudarTela={mudarTela}
+      voltarHome={voltarHome}
+      />
     
   }
 }
@@ -102,17 +117,6 @@ const renderizaTela = () => {
   return (
     
       <div >
-        {/* <Header /> */}
-
-        {/* <Filtro name={name} setName={setName} ordem={ordem} setOrdem={setOrdem}
-         onibus={onibus} setMaiorPreco={setMaiorPreco} setMenorPreco={setMenorPreco} />
-
-        <Main name={name}
-        ordem={ordem} addCarrinho={addCarrinho} setCarrinho={setCarrinho}
-        carrinho={carrinho} onibus={onibus} maiorPreco={maiorPreco} menorPreco={menorPreco}
-       
-        /> */}
-
         {renderizaTela()}
       </div>
       

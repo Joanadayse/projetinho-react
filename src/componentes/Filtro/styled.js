@@ -2,16 +2,14 @@ import styled from "styled-components"
 
 export const Filtragem =styled.div`
 display: flex;
-justify-content: space-between;
-padding-top: 10px;
-padding-left: 10px;
+padding-top: 20px;
+padding-left: 60px;
 padding-right: 10px;
+gap: 40px;
 
-@media (min-width: 480px) {
+@media (min-width: 370px) {
     flex-wrap: wrap;
-    gap: 20px;
-    /* width: 50%; */
-    /* margin: 0 auto; */
+  
   }
 
 .select{
